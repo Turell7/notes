@@ -32,7 +32,7 @@ export function NoteEdit() {
               .max(20, 'Must be 20 characters or less')
               .required(REQUIRED_ERROR_MESSAGE),
             description: Yup.string()
-              .max(3, 'Must be 3 characters or less')
+              .min(3, 'Min be 3 characters or less')
               .required(REQUIRED_ERROR_MESSAGE),
             pictupe: Yup.string().url()
               .min(5, 'More than 5 symbols')
