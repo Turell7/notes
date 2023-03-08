@@ -15,6 +15,7 @@ export function NoteDetail() {
   if (!currentNote) return <Navigate to="/" />
 
   const displayName = currentNote.title ? `${currentNote.title}` : 'Note name not specified'
+  const displayDesc = currentNote.description ? `${currentNote.description}` : 'Note name not specified'
   const displayPicture = currentNote.picture || `${noPicture}`
 
   const isFav = currentNote.favorite
@@ -58,6 +59,7 @@ export function NoteDetail() {
 
       <div className={styles.infoBlock}>
         <h2>{displayName}</h2>
+        <h3>{displayDesc}</h3>
         {showNoteFields}
 
         <div>
