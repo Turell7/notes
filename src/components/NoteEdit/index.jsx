@@ -28,11 +28,11 @@ export function NoteEdit() {
         validationSchema={Yup.object(
           {
             title: Yup.string()
-              .min(2, 'Must be at least 2 characters')
+              .min(1, 'Must be at least 1 characters')
               .max(20, 'Must be 20 characters or less')
               .required(REQUIRED_ERROR_MESSAGE),
             description: Yup.string()
-              .max(20, 'Must be 20 characters or less')
+              .max(3, 'Must be 3 characters or less')
               .required(REQUIRED_ERROR_MESSAGE),
             pictupe: Yup.string().url()
               .min(5, 'More than 5 symbols')
