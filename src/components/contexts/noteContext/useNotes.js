@@ -48,8 +48,6 @@ export function useNotes() {
 
   const getNoteById = (id) => notes.find((note) => note.id === id)
 
-  console.log({ notes })
-
   return {
     notes,
     addNewNote,

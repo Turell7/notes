@@ -34,7 +34,7 @@ export function NoteEdit() {
             description: Yup.string()
               .min(3, 'Min be 3 characters or less')
               .required(REQUIRED_ERROR_MESSAGE),
-            pictupe: Yup.string().url()
+            picture: Yup.string().url()
               .min(5, 'More than 5 symbols')
               .max(800, 'Max 800 symbols')
               .required('Please set image url'),
@@ -51,8 +51,8 @@ export function NoteEdit() {
           <Field name="description" type="text" placeholder="Text ..." />
           <ErrorMessage component="span" className={styles.error} name="description" />
 
-          <Field name="pictupe" type="text" placeholder="img-url" />
-          <ErrorMessage component="span" className={styles.error} name="pictupe" />
+          <Field name="picture" type="text" placeholder="img-url" />
+          <ErrorMessage component="span" className={styles.error} name="picture" />
 
           <button type="submit" className="btn btn-primary">Update</button>
         </Form>

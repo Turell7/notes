@@ -3,7 +3,6 @@ import { useState } from 'react'
 export function Search() {
   const [input, setInput] = useState('')
 
-  // console.log(input)
   return (
     <form>
       <div>

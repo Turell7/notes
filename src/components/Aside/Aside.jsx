@@ -5,8 +5,6 @@ import stylesAside from './styles.module.scss'
 
 export function Aside() {
   const location = useLocation()
-
-  console.log({ location })
   return (
     <aside className={stylesAside.aside}>
       <SearchBar />
