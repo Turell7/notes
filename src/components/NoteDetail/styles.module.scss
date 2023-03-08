@@ -1,0 +1,13 @@
+$avatrSize: 150px;
+
+.picture {
+  width: $avatrSize;
+  height: $avatrSize;
+  object-fit: cover;
+}
+
+.infoBlock {
+  p:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
